@@ -4,12 +4,11 @@ import java.util.Stack;
 
 public class IsValidString {
     /**
-     *
      * @param s string字符串
      * @return bool布尔型
      */
 
-    public boolean isValid(String s) {
+    public static boolean isValid(String s) {
         // write code here
         // 栈 的特点 ： 先进后出
         Stack<Character> stack = new Stack<Character>();
@@ -21,6 +20,11 @@ public class IsValidString {
             else if (stack.isEmpty() || stack.pop() != c) return false;
         }
         return stack.isEmpty();
+    }
+
+    public static void main(String[] args) {
+
+
     }
 
 }

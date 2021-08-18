@@ -31,9 +31,9 @@ public class LCS {
                 new String[longStr.length()][shortStr.length()];
         for (int i = 0; i < longStr.length(); i++) {
             for (int j = 0; j < shortStr.length(); j++) {
-                if (longStr.charAt(i) != shortStr.charAt(j)){
+                if (longStr.charAt(i) != shortStr.charAt(j)) {
                     dp[i][j] = null;
-                }else {
+                } else {
 
                 }
 
@@ -45,7 +45,7 @@ public class LCS {
     }
 
     public static void main(String[] args) {
-        System.out.println(LCS1("1AB2345CD", "12345EF"));
+        System.out.println(LCS1("1AB2345CD", "12345CDEF"));
     }
 
 }

@@ -3,7 +3,6 @@ package com.dorr.ke;
 public class HuiWenString {
 
     public static int getLongestPalindrome(String A, int n) {
-
         // write code here
         boolean[][] dp = new boolean[n][n];
         int max = 1;
@@ -17,7 +16,6 @@ public class HuiWenString {
                         dp[s][e] = true;
                     } else {
                         //
-
                         dp[s][e] = dp[s + 1][e - 1];
                     }
                     if (dp[s][e]) {
@@ -27,10 +25,6 @@ public class HuiWenString {
             }
         }
         return max;
-
-
-
-
     }
 
     public static void main(String[] args) {

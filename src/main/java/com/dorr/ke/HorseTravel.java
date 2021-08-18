@@ -5,8 +5,6 @@ import java.util.Comparator;
 import java.util.LinkedList;
 
 public class HorseTravel {
-
-
     private int X;    // 棋盘的横坐标
     private int Y;    // 棋盘的纵坐标
     private int[][] checkerboard;    // 自定义二维数组棋盘
@@ -111,7 +109,6 @@ public class HorseTravel {
      * 算法优化：正序排序
      * 贪心算法：将当前棋子下下位置的集合按照个数进行排序
      * 优化思想：先将可能多的下下位置的子先下了，再回溯下少位置的子
-     *
      * @param list
      */
     public void sort(LinkedList<Point> list) {

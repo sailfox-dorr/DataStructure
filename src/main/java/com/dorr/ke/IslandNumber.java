@@ -81,8 +81,6 @@ public class IslandNumber {
         dfs(grid, r + 1, c);
         dfs(grid, r, c - 1);
         dfs(grid, r, c + 1);
-
-
     }
 
 }
